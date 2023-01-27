@@ -13,7 +13,7 @@ body {
   text-align: center;
 }
 .top-half {
-  background-color: rgb(7, 195, 148);
+  background-color: rgb(48, 204, 196);
   display: grid;
   place-items: center;
   color: white;
@@ -50,13 +50,13 @@ div.title-box {
 }
 
 .title-box-1 {
-  background: rgb(4, 4, 201);
+  background: rgba(50,168,221,255);
 }
 .title-box-2 {
-  background: orange;
+  background: #f86434
 }
 .title-box-3 {
-  background: rgb(7, 195, 148);
+  background: rgb(48, 204, 196);
 }
 /* div.grid-item:not(last-child) {
   margin-right: 20px;
@@ -66,4 +66,44 @@ div.wrapper {
   width: 600px;
   height: 250px;
   justify-content: space-around
+}
+
+@media (max-width: 600px) {
+  .top-half {
+    background-color: rgba(50,168,221,255);
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 2rem;
+  }
+  .bottom-half {
+    background-color: rgb(231, 231, 231);
+  }
+  div.title-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1.4rem;
+  }
+  /* .grid-section {
+    width: 3rem;
+  } */
+  div.wrapper {
+    display: flex;
+    /* width: 3px; */
+    height: .3rem;
+    flex-direction: column;
+    align-items: center;
+    max-height: 62.5px;
+    margin-top: 30rem;
+  }
+  .text {
+    margin-bottom: 1rem;
+  }
+  .title-box-1 {
+    background: rgba(50,168,221,255);
+  }
+  .title-box-3 {
+    background: rgb(48, 204, 196);
+  }
 }
